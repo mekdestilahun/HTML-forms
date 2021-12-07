@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+}
+
+header {
+  background-color: black;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding-top: 20px;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px 0 0;
+}
+
+header nav ul li :last-child a {
+  margin-right: 0;
+}
+
+.item {
+  flex: 1;
+  margin: 20px;
+  border: 1px solid #333;
+  padding: 20px;
+  text-align: center;
+  background-color: aliceblue;
+}
+.item-double {
+  flex: 2;
+}
+
+div {
+  margin: 5px 10 5px 0;
+}
+
+section form {
+  text-align: left;
+  font-size: 24px;
+  position: relative;
+  display: flex;
+}
+
+@media all and (min-width: 600px) {
+  .container {
+    flex-direction: column;
+    background-color: darkblue;
+
+  }
+
+  .item {
+    font-size: 24;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+  header h1 {
+    margin: 14px 0;
+    padding-top: 0;
+  }
+  header nav {
+    margin-top: 8px 5px 0 0;
+  }
+  header nav ul li a:hover {
+    color: darkcyan;
+  }
+
+  div {
+    margin: 5px 10 5px 0;
+  }
+
+  section form {
+    text-align: left;
+    font-size: 24px;
+    position: relative;
+    display: flex;
+  }
+
+}
